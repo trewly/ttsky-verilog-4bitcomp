@@ -36,7 +36,7 @@
   "DESIGN_REPAIR_MAX_CAP_PCT": 20,
   "RUN_POST_GRT_DESIGN_REPAIR": true,
   "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 30,
-  "MAX_FANOUT_CONSTRAINT": 4,
+  "MAX_FANOUT_CONSTRAINT": 6,
 
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
   "//": "!!! DO NOT CHANGE ANYTHING BELOW THIS POINT !!!",
