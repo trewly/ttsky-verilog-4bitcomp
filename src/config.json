@@ -28,7 +28,7 @@
   "LINTER_INCLUDE_PDK_MODELS": 1,
 
   "//": "If you need a custom clock configuration, read the following documentation first:",
-  "//": "https://tinytapeout.com/faq/#how-can-i-map-an-additional-external-clock-to-one-of-the-gpios",
+  "//": "https://tinytapeout:.com/faq/#how-can-i-map-an-additional-external-clock-to-one-of-the-gpios",
   "CLOCK_PORT": "clk",
 
   "//": "Configuration docs: https://librelane.readthedocs.io/en/latest/reference/configuration.html",
@@ -36,7 +36,7 @@
   "DESIGN_REPAIR_MAX_CAP_PCT": 20,
   "RUN_POST_GRT_DESIGN_REPAIR": true,
   "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 30,
-  "MAX_FANOUT_CONSTRAINT": 6,
+  "MAX_FANOUT_CONSTRAINT": 5,
 
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
   "//": "!!! DO NOT CHANGE ANYTHING BELOW THIS POINT !!!",
