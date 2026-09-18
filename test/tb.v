@@ -41,9 +41,13 @@ module tb ();
 `endif
 
   // Replace tt_um_example with your module name:
-  tt_um_trewlyvuive_4bitcomp #(
-    .IS_TEST(1)
-  ) tt_um_trewlyvuive_4bitcomp_inst (
+  tt_um_trewlyvuive_4bitcomp 
+  `ifndef GL_TEST
+   #(
+     .IS_TEST(1)
+   )
+  `endif
+  tt_um_trewlyvuive_4bitcomp_inst (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST

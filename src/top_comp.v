@@ -1,24 +1,4 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 08/14/2026 02:00:58 PM
-// Design Name: 
-// Module Name: top_comp
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
+`default_nettype none
 
 module top_comp#(
     parameter IS_TEST=0
@@ -66,8 +46,6 @@ wire lets_jump;
 wire allow_result_read;
 
 //program memory
-//wire [7:0] program_in;
-//wire program_mem_read;
 wire program_mem_write;
 reg [3:0] program_read_counter;
 reg [3:0] program_write_counter;
