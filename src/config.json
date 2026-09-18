@@ -32,10 +32,10 @@
   "CLOCK_PORT": "clk",
 
   "//": "Configuration docs: https://librelane.readthedocs.io/en/latest/reference/configuration.html",
-  "DESIGN_REPAIR_MAX_SLEW_PCT": 25,
+  "DESIGN_REPAIR_MAX_SLEW_PCT": 30,
   "DESIGN_REPAIR_MAX_CAP_PCT": 20,
   "RUN_POST_GRT_DESIGN_REPAIR": true,
-  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 30,
+  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 35,
   "MAX_FANOUT_CONSTRAINT": 5,
 
   "//": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
