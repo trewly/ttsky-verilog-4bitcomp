@@ -34,27 +34,11 @@ module tb ();
   assign after_compute = uo_out[3:0];
   assign program_stack = uo_out[7:4];
 
-
-`ifdef GL_TEST
-  wire VPWR = 1'b1;
-  wire VGND = 1'b0;
-`endif
-
   // Replace tt_um_example with your module name:
-  tt_um_trewlyvuive_4bitcomp 
-  `ifndef GL_TEST
-   #(
+  tt_um_trewlyvuive_4bitcomp#(
      .IS_TEST(1)
    )
-  `endif
   tt_um_trewlyvuive_4bitcomp_inst (
-
-      // Include power ports for the Gate Level test:
-`ifdef GL_TEST
-      .VPWR(VPWR),
-      .VGND(VGND),
-`endif
-
       .ui_in  (program_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
       .uio_in ({5'b0_0000,program_mem_write_button,start_button,read_result_button}),   // IOs: Input path

@@ -70,15 +70,17 @@ async def test_comp(dut):
  await ClockCycles(dut.clk, 7)
 
  #start running
+ dut.program_mem_write_button.value =0b0
  dut.start_button.value =0b1
- await RisingEdge(dut.clk)
- await RisingEdge(dut.clk)
+ await ClockCycles(dut.clk, 7)
  dut.start_button.value =0b0
 
  #read result
  await Timer(2000, units="ns")
  dut.read_result_button.value =0b1
- await RisingEdge(dut.clk)
- await RisingEdge(dut.clk)
+ await ClockCycles(dut.clk, 7)
  dut.read_result_button.value =0b0
  await Timer(100, units="ns")
+
+ #check result 
+ assert dut.after_compute.value == 0b0001
